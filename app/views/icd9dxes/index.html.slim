@@ -1,0 +1,23 @@
+h1 Listing icd9dxes
+
+table
+  tr
+    th Code
+    th Description short
+    th Description long
+    th
+    th
+    th
+
+  - @icd9dxes.each do |icd9dx|
+    tr
+      td = icd9dx.code
+      td = icd9dx.description_short
+      td = icd9dx.description_long
+      td = link_to 'Show', icd9dx
+      td = link_to 'Edit', edit_icd9dx_path(icd9dx)
+      td = link_to 'Destroy', icd9dx, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Icd9dx', new_icd9dx_path

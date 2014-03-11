@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Code:
+  = @icd9dx.code
+p
+  strong Description short:
+  = @icd9dx.description_short
+p
+  strong Description long:
+  = @icd9dx.description_long
+
+= link_to 'Edit', edit_icd9dx_path(@icd9dx)
+'|
+= link_to 'Back', icd9dxes_path

@@ -12,6 +12,8 @@ gem 'foundation-rails', '5.0.3.1'
 gem 'mysql2'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'activerecord-import', "~> 0.4.1"
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
